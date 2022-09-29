@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <div>
+        <form method="POST" action="/new">
+            <label for="authorName">Author's Name:</label>
+            <input type="text" id="authorName" name="authorName">
+            <label for="messageBody"> Message:</label>
+            <input type="text" id="messageBody" name="messageBody">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+  </body>
+</html>
